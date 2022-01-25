@@ -1,0 +1,67 @@
+/*Start Footer*/
+
+footer {
+  padding: 50px 0 0;
+
+  background: #0c2461;
+}
+
+footer h6 {
+  color: #fff;
+}
+
+footer li {
+  display: block;
+}
+
+footer a {
+  font-size: 13px;
+  color: #bbb;
+}
+
+footer .sites-div {
+  margin: 25px 0;
+  border-top: 1px solid #111;
+  padding: 20px;
+  border-bottom: 1px solid #111;
+}
+
+footer .sites-media li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .sites-media li a {
+  font-size: 25px;
+}
+
+footer .terms {
+  padding-bottom: 25px;
+}
+
+footer .terms li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+i {
+  transition: 0.3s ease-in-out;
+}
+
+.fa-facebook-f:hover {
+  color: rgb(255, 255, 255);
+}
+
+.fa-twitter:hover {
+  color: #75bfff;
+}
+
+.fa-instagram:hover {
+  color: #9a33db;
+}
+
+.fa-youtube:hover {
+  color: #f12020;
+}
+
+/*End Footer*/

@@ -1,0 +1,81 @@
+/*Start login*/
+.login {
+  padding: 25px;
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.login h4 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.login .create-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login .password-container {
+  position: relative;
+}
+
+.login input[type="password"] {
+  padding-right: 45px;
+}
+
+.login .password-container i {
+  color: #555;
+  font-size: 18px;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.login .password-container i:hover {
+  color: #000;
+}
+
+@media (max-width: 575.98px) {
+  .login {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  body {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .login {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .login {
+    width: 55%;
+  }
+}
+
+/*End login*/
+
+/*my framework*/
+
+.input-invalid {
+  border: solid #e73232;
+}
+
+.input-valid {
+  border: solid #52db25;
+}

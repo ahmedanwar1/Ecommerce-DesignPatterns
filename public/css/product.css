@@ -1,0 +1,529 @@
+/*Start Product wrapper*/
+
+.product-wrapper {
+  padding: 50px 0px 30px;
+}
+
+/*Start product image*/
+.product-wrapper .product-img {
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+
+.product-wrapper .product-img .main-img {
+  margin-top: 20px;
+}
+
+.product-wrapper .product-img .main-img img {
+  width: 68%;
+  height: 68%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .product-wrapper .product-img .main-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product-wrapper .product-thumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  padding: 10px 13px;
+
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+
+  margin: 20px auto;
+  width: 90%;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.product-wrapper .product-thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.product-thumbs #btn-left-thumb,
+.product-thumbs #btn-right-thumb {
+  position: absolute;
+  background: #bbb;
+  padding: 18px 11px;
+  z-index: 9;
+  transition: background 0.3s ease-in-out;
+  cursor: not-allowed;
+}
+
+.product-thumbs #btn-left-thumb.active:hover,
+.product-thumbs #btn-right-thumb.active:hover {
+  background: #d4ab14;
+}
+
+.product-thumbs #btn-left-thumb.active,
+.product-thumbs #btn-right-thumb.active {
+  background: #e2b40c;
+  cursor: pointer;
+}
+
+.product-wrapper .product-thumbs #btn-left-thumb {
+  left: 0;
+  bottom: 8%;
+  border-radius: 0 10px 10px 0;
+}
+
+.product-wrapper .product-thumbs #btn-right-thumb {
+  right: 0;
+  bottom: 8%;
+  border-radius: 10px 0 0 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .product-wrapper .product-thumbs #btn-left-thumb {
+    position: absolute;
+    left: 0;
+    bottom: 7%;
+
+    padding: 14px 9px;
+  }
+
+  .product-wrapper .product-thumbs #btn-right-thumb {
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+
+    padding: 14px 9px;
+  }
+}
+
+.product-wrapper .product-thumbs .img-thumb {
+  min-height: 21%;
+  min-width: 21%;
+  margin: 0 9px;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+.product-wrapper .product-thumbs .img-thumb:first-of-type {
+  margin-left: 0;
+}
+.product-wrapper .product-thumbs .img-thumb:last-of-type {
+  margin-right: 0;
+}
+
+.product-wrapper .product-thumbs .img-thumb img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.product-wrapper .product-thumbs .img-thumb img.active {
+  opacity: 1;
+}
+
+/*End product image*/
+
+/*Start product info*/
+
+.product-info {
+  padding: 15px 35px;
+  margin-left: 21px;
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  border-radius: 10px;
+}
+
+.product-info .title {
+  padding: 15px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.product-info .brand p {
+  margin: 15px 0px;
+}
+
+.product-info .rating-product {
+  font-size: 14px;
+  border-bottom: 2px solid #ccc;
+  padding: 0 0 15px;
+}
+
+.product-info .price h4 {
+  font-weight: 700;
+  margin: 15px 0px;
+}
+
+.product-info .discount .previous-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.product-img .percentage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f3c10c;
+  color: #000;
+  padding: 10px;
+  border-radius: 0 10px 0;
+}
+
+.product-info input[type="number"] {
+  width: 11%;
+  margin: 0 14px;
+}
+
+.add-cart {
+  position: relative;
+}
+
+.product-info .product-btn {
+  width: 200px;
+  padding-left: 25px;
+  border-radius: 20px;
+}
+
+.product-info .add-cart i {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.product-info .add-wishlist {
+  margin-top: 25px;
+}
+
+.product-info .add-wishlist a {
+  color: #000;
+}
+
+.product-info .add-wishlist a i {
+  color: #888;
+}
+
+.product-info .add-wishlist a i.active {
+  color: rgb(255, 0, 0);
+}
+
+/*End product info*/
+
+/*End Product wrapper*/
+
+/*Start product details*/
+
+.product-details {
+  margin: 30px 0px;
+}
+
+.product-details .container {
+  padding: 0;
+}
+
+.product-details .sections {
+  padding: 30px 0;
+  border-top: 2px solid #ccc;
+}
+
+.product-details .sections .row .btn-details {
+  /*margin: 0 128px;*/
+  padding: 6px;
+  color: #777;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.product-details .sections .btn-details.active {
+  color: #000;
+}
+
+.product-details .sections .btn-details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+  width: 26%;
+  height: 2px;
+  background: #0b4fe7;
+  transform: scale(0, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.product-details .sections .btn-details.active::after {
+  transform: scale(1, 1);
+}
+
+.product-details .sections .btn-details.active h5 {
+  font-weight: 700;
+}
+
+.product-details .content > div {
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.product-details .reviews {
+  position: relative;
+}
+
+.product-details .reviews button {
+  position: absolute;
+  right: 18px;
+}
+
+.product-details .reviews .comments .comment-block {
+  position: relative;
+  margin: 20px;
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.product-details .reviews .comments .comment-block > div {
+  margin: 15px 0;
+}
+
+.product-details .reviews .write-comment {
+  position: relative;
+  margin: 20px 35px 20px 0;
+  box-shadow: none;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 610px;
+}
+
+@media (min-width: 768px) {
+  .product-details .reviews .write-comment {
+    box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  }
+}
+
+.product-details .reviews .write-comment form {
+  margin: 14px 0;
+}
+
+.product-details .write-comment textarea {
+  resize: none;
+}
+
+.product-details .reviews .write-comment form label,
+.product-details .reviews .write-comment form input[type="submit"] {
+  margin: 20px 0;
+}
+
+.product-details .reviews .write-comment .feedback {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 20px 20px 0;
+}
+
+.product-details .reviews .write-comment .feedback input {
+  display: none;
+}
+
+.product-details .reviews .write-comment .feedback label {
+  color: #999;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.product-details .reviews .write-comment .feedback label:hover,
+.feedback label:hover ~ label {
+  color: rgb(224, 175, 13) !important;
+}
+
+.product-details .reviews .write-comment .feedback input:checked ~ label {
+  color: rgb(240, 187, 13);
+}
+
+/*End product details*/
+
+/*Start best seller*/
+.related-items {
+  background: #fff;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  margin-bottom: 85px;
+}
+
+.container-items {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container.slide {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 0.75);
+  -moz-box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 0.75);
+  box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 0.75);
+}
+
+.container.slide h4,
+.description h4 {
+  font-weight: 700;
+  padding: 35px 0 14px;
+}
+
+.container.slide .row {
+  flex-wrap: nowrap;
+
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+
+  scroll-snap-type: x mandatory;
+  /*border: 2px solid transparent; /*for testing*/
+  padding: 2px;
+  scroll-behavior: smooth;
+  padding-bottom: 30px;
+}
+
+/*
+.row::after, .row::before { /*to make a padding at the beginning and the end of the slider */ /*
+    content: "";
+    padding: 5px;
+}*/
+
+.container.slide .row::after {
+  /*to make a padding at the end of the slider */
+  content: "";
+  padding: 1px;
+}
+
+.container.slide .row::-webkit-scrollbar {
+  display: none;
+}
+
+.product {
+  background: #fcfcfc;
+  min-width: 230px;
+  position: relative;
+  padding: 10px 0 20px;
+  margin: 15px;
+  /*box-shadow: 1px 1px 10px #CCC, -1px -1px 10px #CCC;*/
+  /*-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);*/
+  box-shadow: rgb(178 178 178) 1px 1px 10px, rgb(178, 178, 178) -1px -1px 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  scroll-snap-align: center;
+}
+
+.product .img {
+  text-align: center;
+}
+
+.product .img img {
+  height: 185px;
+  width: 185px;
+}
+
+.product .product-name p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 13px 13px 5px;
+}
+
+.product .price {
+  margin: 0 13px 0;
+  font-weight: 700;
+}
+
+.product .price p {
+  margin: 0;
+}
+
+.product .discount .previous-price {
+  text-decoration: line-through;
+  margin: 5px 13px 5px;
+  color: #999;
+  font-size: 12px;
+}
+
+.product .discount .percentage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f3c10c;
+  color: #000;
+  padding: 6px;
+  border-radius: 0 10px 0;
+}
+
+.nav-left,
+.nav-right {
+  position: absolute;
+  top: 37%;
+  left: -15px;
+  height: 66px;
+  width: 40px;
+  border: none;
+  outline: none !important;
+  background: #e2b40c;
+  color: #000;
+  border-radius: 0px 10px 10px 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-right:hover,
+.nav-left:hover {
+  background-color: #0b9ce0;
+}
+
+.nav-right {
+  left: unset;
+  right: -15px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+@media (max-width: 1042px) {
+  .nav-right,
+  .nav-left {
+    display: none;
+  }
+}
+
+/*make a custom container to change number of visible products*/
+
+@media (max-width: 520px) {
+  /*to display 1 product*/
+  .container.slide {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 782px) {
+  /*to display 2 products*/
+  .container.slide {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 782px) and (max-width: 1042px) {
+  /*to display 3 products*/
+  .container.slide {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 1042px) and (max-width: 1298px) {
+  /*to display 4 products*/
+  .container.slide {
+    max-width: 1043px;
+  }
+} /*if greater than that it will take the normal bootstrap container and display 5 products*/
+
+/*End best seller*/

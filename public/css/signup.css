@@ -1,0 +1,80 @@
+/*Start signup*/
+.signup {
+  padding: 25px;
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.signup h4 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.signup .create-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup .password-container {
+  position: relative;
+}
+
+.signup input[type="password"] {
+  padding-right: 45px;
+}
+
+.signup .password-container i {
+  color: #555;
+  font-size: 18px;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.signup .password-container i:hover {
+  color: #000;
+}
+
+@media (max-width: 575.98px) {
+  .signup {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  body {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .signup {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .signup {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .signup {
+    width: 55%;
+  }
+}
+/*End signup*/
+
+/*my framework*/
+
+.input-invalid {
+  border: 2px solid #e73232;
+}
+
+.input-valid {
+  border: 2px solid #52db25;
+}

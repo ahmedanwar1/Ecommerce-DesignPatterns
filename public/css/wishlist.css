@@ -1,0 +1,65 @@
+/*Start wishlist items*/
+
+.wishlist {
+  margin: 30px 0 50px;
+}
+
+.wishlist .wishlist-items {
+  min-width: 73%;
+  /*height: 600px;  */
+  /*background: #BBB;*/
+  box-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+  border-radius: 10px;
+}
+
+.wishlist .wishlist-items h4 {
+  font-weight: 700;
+  margin: 30px 0px;
+}
+
+.wishlist .wishlist-items .wishlist-item {
+  border-bottom: 2px solid #ccc;
+  padding: 25px 0;
+}
+
+.wishlist .wishlist-items .wishlist-item .item-image {
+  width: 125px;
+  height: 125px;
+}
+
+.wishlist .wishlist-items .wishlist-item .item-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wishlist .wishlist-items .wishlist-item .details .name {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.wishlist .wishlist-items .wishlist-item .details .price > span {
+  margin: 0 5px;
+}
+
+.wishlist .wishlist-items .wishlist-item .details .price .current-price {
+  font-weight: 700;
+  color: #0447a6;
+}
+
+.wishlist .wishlist-items .wishlist-item .details .price .previous-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.wishlist .wishlist-items .wishlist-item .details .price .percentage {
+  color: #fff;
+  padding: 5px 7px;
+  background: #000;
+  border-radius: 5px;
+}
+
+.wishlist .wishlist-items h4 {
+  padding: 20px 25px 0;
+}
+
+/*End wishlist items*/

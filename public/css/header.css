@@ -1,0 +1,179 @@
+/*Start Side Bar*/
+
+.side-bar {
+  color: #fff;
+  background-color: #0c2461;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 3333;
+
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+
+  transition: width 0.3s ease-in-out;
+}
+
+.side-bar h5 {
+  margin: 20px 0;
+}
+
+.side-bar li {
+  display: block;
+  margin: 15px 0;
+}
+
+.side-bar > div {
+  border-bottom: 1px solid #333;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.side-bar .top-header {
+  font-size: 23px;
+}
+
+.side-bar .top-header i {
+  margin-right: 15px;
+}
+
+.side-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/*End Side Bar*/
+
+/*Start Header*/
+
+header {
+  /*background-image: url(http://demo.posthemes.com/pos_ecolife_toy/modules/posslideshows/images/sample-1.jpg);
+      height: 650px;*/
+  background-size: cover;
+  color: #fff;
+}
+
+/*Start top bar*/
+header .top-bar {
+  padding: 12px 0;
+  font-size: 13px;
+
+  background: #0c2461;
+}
+
+header .top-bar .nav-list ul li:not(:last-child)::after {
+  content: " |";
+  color: #aaa;
+  margin: 0 8px;
+}
+
+header .top-bar .nav-list ul li i {
+  color: #eee;
+  margin: 0 5px;
+}
+
+header .top-bar .nav-list ul li > span {
+  color: #eee;
+  margin: 0 5px;
+}
+
+header img {
+  width: 29px;
+  height: 29px;
+}
+/*End top bar*/
+
+/*Start main header*/
+
+.main-header {
+  /*background-color: rgb(46 46 46 / 73%);*/
+
+  /*background: #1e3799;*/
+
+  background-color: #0447a6;
+}
+
+.main-header .container {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.main-header .brand .brand-name {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.main-header .brand .brand-name span {
+  color: #f3c10c;
+}
+
+.search i {
+  position: absolute;
+  z-index: 999;
+  color: #000;
+  top: 10px;
+  left: 15px;
+}
+
+.search input[type="text"] {
+  width: 87%;
+  border-radius: 0.25rem 0 0 0.25rem;
+  padding-left: 43px;
+}
+
+.search input[type="submit"] {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+@media (max-width: 767px) {
+  .main-header .container {
+    padding: 31px;
+  }
+}
+
+.main-header p {
+  margin: 0;
+}
+
+/*End main header*/
+
+/*Start nav menu*/
+.nav-menu {
+  background: #f3c10c;
+  padding: 24px 0 0;
+}
+
+.nav-menu ul li:not(:last-of-type) {
+  margin-right: 18px;
+}
+
+.nav-menu ul li a {
+  color: #000;
+}
+
+.nav-menu ul li {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.nav-menu ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #0b4fe7;
+  transform: scale(0, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu ul li:hover::after {
+  transform: scale(1, 1);
+}
+
+/*End nav menu*/
+
+/*End Header*/
