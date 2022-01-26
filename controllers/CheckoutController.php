@@ -39,17 +39,3 @@ class CheckoutController {
     }
   }
 }
-
-//all the work would be here "strategy pattern"
-
-/*
-edit: this is for checkout class not payment
-1. get user's email ===========>
-2. get products in cart ==========>
-3. check quantity of items ==============>
-4. check balance 
-5. update products
-6. deduct the balance ===================>
-7. remove product from cart
-8. save order in history
-*/
